@@ -242,7 +242,52 @@ h3{
     margin-bottom: 16px;
     font-size: 15px;
  }
+
+ /* here we working on the testimonial section of the our website */
+
+ .testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align:center;
+ }
+ .testimonial h1{
+    margin: 10px 0;
+ }
+ .testimonial p{
+    font-size: 13px;
+    font-weight: 300;
+ }
+ .testimonial-col{
+    flex-basis: 44%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: left;
+    background-color: #fff3f3;
+    display: flex;
+    padding: 25px;
+    cursor: pointer;
+ }
+ .testimonial-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 40px;
+    border-radius: 50%;
+ }
+ .testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+ }
+ .testimonial-col .fa-star, .testimonial-col .fa-star-half-stroke{
+    color: var(--star-background-color);
+ }
+ @media(max-width:700px){
+    .testimonial-col img{
+        margin: 0 3px 0 15px;
+    }
+ }
 :root{
     --nav-hover-effect:#f44336;
     --course-background-color:#fff3f3;
+    --star-background-color:#f44333;
 }
