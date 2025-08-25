@@ -20,7 +20,8 @@ nav{
     padding: 2% 6%;
 }
 nav img{
-    width:150px;
+    width:100px;
+    vertical-align: middle;
 }
 .nav-links{
     flex: 1;
@@ -81,7 +82,7 @@ nav img{
     background-color: var(--nav-hover-effect);
     border: 1px solid #f44336;
 }
-nav .fa{
+nav .fa-xmark, nav .fa-bars{
     display: none;
 }
 @media(max-width:700px){
@@ -158,10 +159,6 @@ h3{
         flex-direction: column;
     }
 }
-:root{
-    --nav-hover-effect:#f44336;
-    --course-background-color:#fff3f3;
-}
 
 /* we working on the campus section of the website */
 
@@ -196,7 +193,7 @@ h3{
    width: 100%;
    font-weight: 500;
    color: #fff;
-   font-size: 26px;
+   font-size: 22px;
    bottom: 0;
    left: 50%;
    transform: translateX(-50%);
@@ -207,7 +204,45 @@ h3{
 .layer:hover h3{
     bottom: 49%;
     opacity: 1;
+    text-transform: uppercase;
 }
 .layer:hover{
     background-color:  rgb(244, 67, 54,0.7);
+}
+ /* here we are working on the facilities section of the website */
+
+ .facilities{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+ }
+ .facilities h1{
+    font-size: 20px;
+ }
+ .facilities p{
+    font-size: 12px;
+    margin: 10px 0;
+ }
+ .facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+ }
+ .facilities-col img{
+    width: 100%;
+    border: 10px;
+ }
+ .facilities-col p{
+    padding: 2px;
+    font-size: 10px;
+ }
+ .facilities-col h3{
+    margin-top: 15px;
+    margin-bottom: 16px;
+    font-size: 15px;
+ }
+:root{
+    --nav-hover-effect:#f44336;
+    --course-background-color:#fff3f3;
 }
